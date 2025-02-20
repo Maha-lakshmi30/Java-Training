@@ -27,10 +27,7 @@ class Account {
         if (this.balance >= amount) {
             this.balance -= amount;
             System.out.println("Withdrawn successfully.");
-        } else if(amount<0){
-        	System.out.println("The amount cannot be negative");
-        }
-        else {
+        } else {
             System.out.println("Insufficient balance.");
         }
     }
@@ -116,7 +113,7 @@ public class BankAccount {
 	    int choice;
 
 	    do {
-	        System.out.println("Enter your choice:");
+	        System.out.println("\nEnter your choice:");
 	        System.out.println("To Deposit --> Enter 1 ");
 	        System.out.println("To Withdraw --> Enter 2 ");
 	        System.out.println("To Add Account --> Enter 3 ");
@@ -172,8 +169,9 @@ public class BankAccount {
 	                break;
 	        }
 
-	    } while(choice != 6); 
+	    } while(choice != 6); // The loop condition ensures the menu is shown again until the user chooses to exit
 
 	    sc.close();
 	}
+
 }
