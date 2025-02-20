@@ -169,7 +169,7 @@ public class BankAccount {
 	                break;
 	        }
 
-	    } while(choice != 6); // The loop condition ensures the menu is shown again until the user chooses to exit
+	    } while(choice != 6); 
 
 	    sc.close();
 	}
