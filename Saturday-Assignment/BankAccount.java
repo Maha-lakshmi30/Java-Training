@@ -24,7 +24,9 @@ class Account {
     }
 
     void withDraw(int amount) {
-        if (this.balance >= amount) {
+	if(amount<0){
+	     System.out.println("The amount cannot be negative);
+	}else if (this.balance >= amount) {
             this.balance -= amount;
             System.out.println("Withdrawn successfully.");
         } else {
